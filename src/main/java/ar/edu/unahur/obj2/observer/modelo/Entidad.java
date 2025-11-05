@@ -4,6 +4,7 @@ import java.util.ArrayList;
 import java.util.List;
 
 import ar.edu.unahur.obj2.observer.riesgo.ComportamientoRiesgo;
+import ar.edu.unahur.obj2.observer.riesgo.RiesgoCritico;
 
 public class Entidad implements IEntidad{
     private final String nombre;
