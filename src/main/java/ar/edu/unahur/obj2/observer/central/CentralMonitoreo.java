@@ -1,5 +1,6 @@
 package ar.edu.unahur.obj2.observer.central;
 
+import java.util.ArrayList;
 import java.util.List;
 
 import ar.edu.unahur.obj2.observer.excepciones.DominioException;
@@ -7,8 +8,8 @@ import ar.edu.unahur.obj2.observer.modelo.Alerta;
 import ar.edu.unahur.obj2.observer.modelo.IEntidad;
 
 public class CentralMonitoreo {
-    private List<IEntidad> entidades;
-    private List<RegistroAlertas> registro;
+    private List<IEntidad> entidades= new ArrayList<>();
+    private List<RegistroAlertas> registro = new ArrayList<>();
 
     public void agregarEntidad(IEntidad entidad){
         entidades.add(entidad);

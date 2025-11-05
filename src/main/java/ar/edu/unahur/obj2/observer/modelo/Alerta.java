@@ -20,8 +20,4 @@ public class Alerta {
     public Boolean esCritica(){
         return Boolean.valueOf (nivel >= 8);
     }
-
-    
-    
-
 }
