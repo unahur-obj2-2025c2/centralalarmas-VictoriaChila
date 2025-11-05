@@ -3,6 +3,7 @@ package ar.edu.unahur.obj2.observer;
 import static org.junit.jupiter.api.Assertions.assertEquals;
 import static org.junit.jupiter.api.Assertions.assertFalse;
 import static org.junit.jupiter.api.Assertions.assertNotEquals;
+import static org.junit.jupiter.api.Assertions.assertNotNull;
 
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
@@ -116,5 +117,15 @@ public class CentralTest {
 
 
     }
+    @Test
+    void test8(){
+        central.emitirAlerta("Avalancha", 10);
+        central.emitirAlerta("Erupcion Volcanica", 9);
+        e1.setComportamiento(new RiesgoAcumulativo());
+        assertEquals(e1.riesgo(), 19);
+        assertEquals(e2.riesgo(), 10);
+        assertNotNull(e1.riesgo());
 
+
+}
 }
